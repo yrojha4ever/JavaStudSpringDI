@@ -22,5 +22,6 @@ public class User {
 		return name + " is " + age + " years old, living in " + country + ". His addresses: " + addresses;
 
 	}
+	
 
 }

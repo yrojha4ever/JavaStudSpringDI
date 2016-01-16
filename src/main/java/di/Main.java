@@ -29,7 +29,7 @@ public class Main {
 
 		// =========INJECTING THROUGH SETTER METHODS============
 		// ======Get Bean=======
-		UserDto userDto = (UserDto) context.getBean("userSetterInjection");
+		UserDto userDto = context.getBean("userSetterInjection", UserDto.class);
 		// Show the Data Set in The Bean Class.
 		System.out.println("Spring Setter Injection");
 		System.out.println(userDto.toString());
