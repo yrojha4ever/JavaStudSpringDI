@@ -1,4 +1,5 @@
-```
+1. Create applicationContext.xml file:
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -20,7 +21,7 @@
 
 <bean class="di.setterInjection.Address" id="address">
 	<property name="city" value="KTM"/>
-	<property name="state" value="STATE"/>
+	<property name="state" value="BAGMATI"/>
 	<property name="zip" value="0977"/>
 	<property name="country" value="NEPAL"/>
 </bean>
@@ -35,7 +36,7 @@
 ```
 
 Make sure you have spring-beans framework is also in pom.xml file. <br/>
-```
+```xml
 <dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-beans</artifactId>
