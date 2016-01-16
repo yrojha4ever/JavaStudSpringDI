@@ -43,3 +43,14 @@ Make sure you have spring-beans framework is also in pom.xml file. <br/>
 			<version>${spring-framework.version}</version>
 		</dependency>
 ```
+Test it:
+```java
+ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+// ====INJECTING THROUGH CONSTRUCTOR=======
+User user = (User) context.getBean("user");
+System.out.println(user);
+
+// =========INJECTING THROUGH SETTER METHODS============
+UserDto userDto = context.getBean("userSetterInjection", UserDto.class);
+System.out.println(userDto);
+```
